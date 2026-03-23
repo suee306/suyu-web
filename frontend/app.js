@@ -1,4 +1,4 @@
-const API = "https://你的后端.onrender.com"; // ❗改成你的 Render 地址
+const API = "https://suyu-web.onrender.com"; // ❗改成你的 Render 地址
 
 let token = "";
 let imageUrl = "";
