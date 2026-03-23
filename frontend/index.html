@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>Suyu 日记</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+
+  <!-- 登录 -->
+  <div id="auth">
+    <h2>登录 / 注册</h2>
+    <input id="username" placeholder="用户名" />
+    <input id="password" type="password" placeholder="密码" />
+    <button onclick="register()">注册</button>
+    <button onclick="login()">登录</button>
+  </div>
+
+  <!-- 主界面 -->
+  <div id="app" style="display:none;">
+    <h2>我的日记</h2>
+
+    <textarea id="content" placeholder="写点什么..."></textarea>
+
+    <input id="tags" placeholder="标签（用逗号分隔）" />
+
+    <input type="file" id="image" />
+
+    <button onclick="uploadImage()">上传图片</button>
+    <button onclick="saveNote()">发布</button>
+
+    <hr />
+
+    <input id="search" placeholder="搜索..." oninput="searchNote()" />
+
+    <div id="notes"></div>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
